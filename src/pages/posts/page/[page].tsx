@@ -24,6 +24,7 @@ export default function Page({ posts, tags, pagination, page }: Props) {
   return (
     <Layout>
       <BasicMeta url={url} title={title} />
+      <BasicMeta url={url} description={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />
       <PostList posts={posts} tags={tags} pagination={pagination} />
